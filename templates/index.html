@@ -1,0 +1,24 @@
+{% extends 'base.html' %} 
+{% block title %} Quench my thirst {% endblock %}
+{% block content %}
+
+<h1>Brewery Search</h1>
+
+
+<div class="row">
+  <h5>Welcome! You like beer and need to lookup your favorite brewery? You are in the right spot!</h5>
+
+
+  <div class="col-lg-6 col-md-8 col-sm-12">
+    <form method="POST" action="/" class="form-inline">
+      <label for="search_query"></label>
+      <input type="text" id="search_query" name="search_query" class="form-control" placeholder="Search for a brewery">
+      <button class="btn btn-primary">Search</button>
+    </form>
+   
+  </div>
+
+
+</div>
+
+{% endblock %}

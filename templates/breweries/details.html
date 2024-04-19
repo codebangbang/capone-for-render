@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %} Detail {% endblock %}
+{% block content %}
+
+<!-- This page displays the details of a brewery. It shows the name, phone number, address, website, and type of the brewery. -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-30">
+            <h1>{{ brewery.name }} Details</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="card mb-10 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text"><strong> Address: </strong><a
+                                    href="https://www.google.com/maps/search/?api=1&query={{ brewery.street }}, {{ brewery.city }}, {{ brewery.state }}, {{ brewery.postal_code }}"
+                                    target="_blank">{{
+                                    brewery.street }}, {{ brewery.city }}, {{ brewery.state }}, {{ brewery.postal_code
+                                    }}</a></p>
+                            <p class="card-text"><strong>Website: </strong><a href="{{ brewery.website_url }}"
+                                    target="_blank">{{ brewery.website_url }}</a></p>
+                            <p class="card-text"><strong>Phone: </strong>{{ brewery.phone }}</p>
+                            <p class="card-text"><strong>Brewery Type: </strong>{{ brewery.brewery_type }}</p>
+                            <button class="btn btn-primary" onclick="window.history.back()">Back to Results</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    {% endblock %}

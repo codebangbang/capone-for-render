@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %} Join Thirst Quencher {% endblock %}
+
+{% block content %}
+
+
+<!-- This page allows a user to sign up for an account. The user will need to enter their username, email, password, bio, and location. If the user enters an incorrect username, email, or password, they will not be able to sign up. If the user enters the correct username, email, and password, they will be signed up and redirected to the home page. -->
+<div class="row justify-content-md-center">
+    <div class="col-md-7 col-lg-5">
+        <h1 class="join-message">Join Thirst Quencher ASAP!</h1>
+        <form method="POST" id="user_form">
+            {{ form.hidden_tag() }}
+
+            {% for field in form if field.widget.input_type != 'hidden' %}
+            {% for error in field.errors %}
+            <span class="text-white">{{ error }}</span>
+            {% endfor %}
+            {{ field(placeholder=field.label.text, class="form-control") }}
+            {% endfor %}
+
+            <button class="btn btn-primary btn-lg btn-block">Sign me up!</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %} Login. QUICK! {% endblock %}
+
+{% block content %}
+
+
+<!-- This page allows a user to log in to their account. The user will need to enter their username and password. If the user enters an incorrect username or password, they will not be able to log in. If the user enters the correct username and password, they will be logged in and redirected to the home page. -->
+<div class="row justify-content-md-center">
+  <div class="col-md-7 col-lg-5">
+    <h1 class="join-message">Welcome back!</h1>
+
+    <form method="POST" id="user_form">
+      {{ form.hidden_tag() }}
+
+      {% for field in form if field.widget.input_type != 'hidden' %}
+      {% for error in field.errors %}
+      <span class="text-white">{{ error }}</span>
+      {% endfor %}
+      {{ field(placeholder=field.label.text, class="form-control") }}
+      {% endfor %}
+
+      <button class="btn btn-primary btn-block btn-lg">Log in</button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

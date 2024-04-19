@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %} User Detail {% endblock %}
+
+{% block content %}
+
+<!-- This page displays detail detail about a specific user from our database. We will display the user's username, email, bio, and location. -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>@{{ user.username }} Details</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card mb-10 shadow-sm">
+            <div class="card-body">
+              <!-- <img src="{{ user.image_url }}" alt="Image for {{ user.username }}" id="profile-avatar"
+                class="float-left"> -->
+              <div class="user-info">
+                <p><strong>Username: </strong>{{ user.username }}</p>
+                <p><strong>Email: </strong>{{ user.email }}</p>
+                <p><strong>Bio: </strong>{{ user.bio }}</p>
+                <p><strong>Location: </strong>{{ user.location }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.9">
+    <title>{% block title %} Thirst Quencher {% endblock %}</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/bootstrap"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="/static/stylesheets/style.css">
+    <link rel="shortcut icon" href="/static/beerMugs.jpg">
+
+</head>
+
+<!-- This base.html file is used to hold our navbar that is displayed on each page throughout our program.  -->
+<body>
+    <body class="{% block body_class %}{% endblock %}">
+        <nav class="navbar navbar-expand">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">
+                        <img src="/static/images/beerMugs.jpg" alt="logo">
+                        <span>Brewery Search Home</span>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+
+                    {% if not g.user %}
+                    <li><a href="/signup">Sign up</a></li>
+                    <li><a href="/login">Log in</a></li>
+                    {% else %}
+                    <li>
+                        <a href="/users/profile">
+                            <img src="{{ g.user.image_url }}" alt="{{ g.user.username }}">
+                        </a>
+                    </li>
+                    <li><a href="/logout">Log out</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            {% for category, message in get_flashed_messages(with_categories=True) %}
+            <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+
+            {% block content %}
+
+            {% endblock %}
+
+
+    </body>
+
+</html>
