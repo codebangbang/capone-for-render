@@ -21,7 +21,7 @@ cycler==0.11.0
 dbus-python==1.2.18
 decorator==4.4.2
 distro==1.7.0
-distro-info==1.1+ubuntu0.1
+distro-info==1.0
 dnspython==2.6.1
 email_validator==2.1.1
 Flask==3.0.0
@@ -75,7 +75,7 @@ pyinotify==0.9.6
 PyJWT==2.3.0
 pyOpenSSL==21.0.0
 pyparsing==2.4.7
-python-apt==2.4.0+ubuntu2
+python-apt==2.4.0
 python-dateutil==2.8.1
 pythran==0.10.0
 pytz==2022.1
