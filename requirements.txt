@@ -10,7 +10,7 @@ Brotli==1.0.9
 certifi==2024.2.2
 chardet==4.0.0
 charset-normalizer==3.3.2
-cliapp==1.20180812.1
+cliapp==1.0.9
 click==8.1.7
 cmdtest==0.32+git
 colorama==0.4.4
