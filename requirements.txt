@@ -76,7 +76,6 @@ pyinotify==0.9.6
 PyJWT==2.8.0
 pyOpenSSL==24.1.0
 pyparsing==3.1.2
-pythin==0.1.0
 python-apt==2.4.0+ubuntu3
 python-dateutil==2.9.0
 pythran==0.15.0
