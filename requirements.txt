@@ -90,7 +90,6 @@ systemd-python
 traitlets
 ttystatus
 typing_extensions
-ubuntu-advantage-tools
 ufoLib2
 ufw
 unattended-upgrades
