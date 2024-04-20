@@ -89,8 +89,7 @@ sympy==1.12
 
 traitlets==5.14.3
 
-typing_extensions==4.11.0
-ubuntu-pro-client==8001
+
 ufoLib2==0.16.0
 ufw==0.36.1
 unattended-upgrades==0.1
