@@ -86,7 +86,7 @@ six==1.16.0
 soupsieve==2.5
 SQLAlchemy==2.0.29
 sympy==1.12
-systemd-python==234
+
 traitlets==5.14.3
 ttystatus==0.38
 typing_extensions==4.11.0
