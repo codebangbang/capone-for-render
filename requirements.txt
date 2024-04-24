@@ -106,7 +106,7 @@ stack-data==0.6.3
 sympy==1.12
 # systemd-python==234
 terminaltables==3.1.10
-traitlets==5.14.3
+# traitlets==5.14.3
 # ttystatus==0.38
 # typing_extensions==4.11.0
 # ubuntu-pro-client==8001
