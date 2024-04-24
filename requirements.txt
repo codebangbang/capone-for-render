@@ -103,7 +103,7 @@ six==1.16.0
 soupsieve==2.5
 SQLAlchemy==2.0.29
 stack-data==0.6.3
-sympy==1.12
+# sympy==1.12
 # systemd-python==234
 # terminaltables==3.1.10
 # traitlets==5.14.3
