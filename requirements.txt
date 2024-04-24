@@ -41,7 +41,7 @@
 # fs==2.4.16
 # gast==0.5.4
 # greenlet==3.0.3
-# gunicorn==22.0.0
+gunicorn==22.0.0
 # html5lib==1.1
 # httplib2==0.22.0
 # idna==3.7
