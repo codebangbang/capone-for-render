@@ -13,7 +13,7 @@ certifi==2024.2.2
 cffi==1.16.0
 chardet==5.2.0
 charset-normalizer==3.3.2
-cliapp==1.20180812.1
+# cliapp==1.20180812.1
 click==8.1.7
 cmdtest==0.1.1
 colorama==0.4.6
